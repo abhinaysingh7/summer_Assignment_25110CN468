@@ -1,17 +1,18 @@
-#include <stdio.h>
+public class Q37 {
+    public static void main(String[] args) {
+        int n = 5;
 
-int main() {
-    int i, j, n = 5;
+        for (int i = 1; i <= n; i++) {
 
-    for(i = 1; i <= n; i++) {
-        for(j = 1; j <= n - i; j++)
-            printf(" ");
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
 
-        for(j = 1; j <= 2 * i - 1; j++)
-            printf("*");
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                System.out.print("*");
+            }
 
-        printf("\n");
+            System.out.println();
+        }
     }
-
-    return 0;
 }

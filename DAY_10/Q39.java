@@ -1,18 +1,18 @@
-#include <stdio.h>
+public class Q39 {
+    public static void main(String[] args) {
+        int n = 5;
 
-int main() {
-    int i, j, n = 5;
+        for (int i = 1; i <= n; i++) {
 
-    for(i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j);
+            }
 
-        for(j = 1; j <= i; j++)
-            printf("%d", j);
+            for (int j = i - 1; j >= 1; j--) {
+                System.out.print(j);
+            }
 
-        for(j = i - 1; j >= 1; j--)
-            printf("%d", j);
-
-        printf("\n");
+            System.out.println();
+        }
     }
-
-    return 0;
 }
